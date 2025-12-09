@@ -1,6 +1,6 @@
 # LMMX3
 
-*LMMX3 is a theme modified from the LMMS default theme. Enjoy ^_^ *
+*LMMX3 is a theme modified from the LMMS default theme. Enjoy ^_^*
 
 ## Intro
 
@@ -18,11 +18,12 @@ Clone the repo and go to LMMS - Edit - Settings - Paths - Theme directory, set t
 
 Tranlucent background may reduce the readability, you can add blur effect to get a better experience if your compositor supports it (e.g. [Swayfx](https://github.com/WillPower3309/swayfx/), [Hyprland](https://github.com/hyprwm/Hyprland)). 
 
-## Screenshot
+## Screenshots
+Blur off:
+![bluroff](blur_off.png)
 
-![bluroff](blur_off.png "Blur off")
-
-![bluron](blur_on.png "Blur on, needs compositor support.")
+Blur on, needs compositor support:
+![bluron](blur_on.png)
 
 ## Thanks
 
