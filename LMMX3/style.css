@@ -802,6 +802,10 @@ lmms--gui--MixerView QPushButton,
 lmms--gui--EffectRackView QPushButton,
 lmms--gui--ControllerRackView QPushButton {
 	font-size: 10px;
+	/* it should be rgba(255, 255, 255, 0.1) but the button doesn't support alpha */
+	background-color: rgb(59, 66, 74);
+	border: none;
+	border-radius: 4px;
 }
 
 lmms--gui--MixerChannelView {
