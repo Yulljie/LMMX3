@@ -30,10 +30,8 @@ Blur on, needs compositor support:
 
 ## License
 
-Same as [the original theme](https://github.com/LMMS/artwork), CC0.
+The `style.css` is taken from the default theme and LMMS is released under GPLv2, thus this theme is under GPLv2, too.
 
 ## Thanks
 
 [GIMP](https://www.gimp.org/)
-
-[The original theme](https://github.com/LMMS/artwork)
