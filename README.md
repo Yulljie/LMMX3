@@ -8,7 +8,7 @@ LMMX3 features translucent background and some other visual enhancement, giving 
 
 The theme is created on LMMS git version `1.3.0-alpha.1.904+bfa04c9` on Arch Linux. LMMS release `1.2.2` can't apply the theme correctly. Also, on qt6 git version `1.3.0-alpha.1.912+0187e64` the translucent background won't take effect (Newer versions not tested).
 
-Newer versions on GNU/Linux should be ok.
+Newer qt5 versions on GNU/Linux should be ok.
 
 Windows and macOS not tested.
 
