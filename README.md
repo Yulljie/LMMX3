@@ -25,6 +25,11 @@ Blur off:
 Blur on, needs compositor support:
 ![bluron](blur_on.png)
 
+## License
+
+Same as [the original theme](https://github.com/LMMS/artwork), CC0.
+
+
 ## Thanks
 
 [GIMP](https://www.gimp.org/)
