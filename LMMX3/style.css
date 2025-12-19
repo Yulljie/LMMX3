@@ -697,12 +697,18 @@ QToolButton::menu-button {
 /* track label buttons - the part that contains the icon and track title */
 
 lmms--gui--TrackLabelButton {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0);
 	border-radius: 4px;
 	font-size: 11px;
 	font-weight: normal;
 	padding: 2px 1px;
 }
+
+/* Because of the default QLineEdit:focus's translucent background color, previous track lable will still show under the QLineEdit, witch may reduce readability. */
+lmms--gui--TrackLabelButton > QLineEdit:focus {
+	background-color: #62686E;
+}
+
 
 lmms--gui--TrackLabelButton:hover {
 /*	border: 1px solid #515B66;
@@ -722,10 +728,12 @@ lmms--gui--TrackLabelButton:checked {
 	background-image: url("resources:track_shadow_p.png"); */
 	border-radius: 3px;
 	padding: 1px 0px;
+	background-color: rgba(255, 255, 255, 0)
 }
 
 lmms--gui--TrackLabelButton:checked:hover {
 	padding: 1px 0px;
+	background-color: rgba(255, 255, 255, 0.15)
 }
 
 lmms--gui--TrackLabelButton:checked:pressed {
