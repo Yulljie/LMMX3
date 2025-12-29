@@ -115,6 +115,14 @@ lmms--gui--TextFloat, lmms--gui--SimpleTextFloat {
 	color: #d1d8e4;
 }
 
+/* This is set for the messages in LMMS but it seems not to take effect */
+/*
+QMessageBox {
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	border-width: 1px;
+}
+*/
 
 /* splash screen text */
 QSplashScreen QLabel {
@@ -383,6 +391,19 @@ QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:sbar
 lmms--gui--EffectRackView QScrollBar::up-arrow:vertical:disabled { background-image: url("resources:sbarrow_up.png");}
 lmms--gui--EffectRackView QScrollBar::down-arrow:vertical:disabled { background-image: url("resources:sbarrow_down.png");}
 
+/* Progress Bar */
+QProgressBar {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 0px;
+	height: 16px;
+	text-align: center;
+}
+
+QProgressBar::chunk {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* background for song editor and pattern editor */
 
 lmms--gui--TrackContainerView QFrame {
@@ -542,7 +563,7 @@ lmms--gui--Sf2InstrumentView > QLabel {
 /* main toolbar sliders (master vol, master pitch) */
 
 lmms--gui--AutomatableSlider::groove:vertical {
-	background: #040506;
+	background: rgba(255, 255, 255, 0.1);
 	border: none;
 	border-radius: 2px;
 	width: 2px;
@@ -561,7 +582,7 @@ lmms--gui--AutomatableSlider::handle:vertical {
 /* main horizontal sliders (zoom) */
 
 lmms--gui--AutomatableSlider::groove:horizontal {
-	background: #040506;
+	background: rgba(255, 255, 255, 0.1);
 	border: none;
 	border-radius: 2px;
 	height: 2px;
@@ -618,15 +639,37 @@ QWidget#mainToolbar {
 /* smaller toolbars */
 
 QToolBar {
-	background-color: rgba(38, 43, 48, 0.7);
+	background-color: rgb(38, 43, 48);
 	border: none;
 	padding: 2px;
-	spacing: 0;
+/*	spacing: 0;  */
+	margin: 0px;
 }
 
 QToolBar::separator {
 	border: none;
 	width: 5px;
+}
+
+/* All Buttons */
+QAbstractButton {
+	background-color: rgba(255, 255, 255, 0.1);
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	padding: 3px 6px 3px 6px;
+	border: none;
+}
+
+QAbstractButton:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+QAbstractButton:checked {
+	border-left-width: 3px;
+	border-color: rgb(255, 255, 255);
+	padding: 3px 6px 3px 3px;
+	border-style: solid;
 }
 
 /* all tool buttons */
@@ -636,15 +679,16 @@ QToolButton, QToolButton::menu-button {
 	padding: 3px;
 	border: none; 
 	border-radius: 4px;
-	background: rgba(255, 255, 255, 0.1);
+/*	background: rgba(255, 255, 255, 0.1); */
 	font-size:10px;
 	color: #fff;
+	margin: 3px;
 }
 
 QToolButton:hover {
 	border: none;
 	border-radius: 4px;
-	background: rgba(255, 255, 255, 0.15);
+/*	background: rgba(255, 255, 255, 0.15); */
 }
 
 QToolButton:hover:checked {
@@ -946,6 +990,11 @@ lmms--gui--SubWindow {
 	color: rgba(50, 55, 60, 0.7);
 	qproperty-activeColor: rgba(38, 43, 48, 0.7);
 	qproperty-borderColor: rgba(0, 0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(255, 255, 255);
+	padding: 0px;
+	background-color: rgb(38, 43, 48);
 }
 
 /* Subwindow title text */
