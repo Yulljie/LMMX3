@@ -548,10 +548,12 @@ QPushButton#btn-mute-inv,
 QPushButton#btn-mute:checked {
 	image: url("resources:speaker_slash.svg");
 	background: red;
+	border: none;
 }
 
 QPushButton#btn-solo:checked {
 	background: #2696d1;
+	border: none;
 }
 
 /* font sizes */
