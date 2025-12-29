@@ -990,10 +990,11 @@ lmms--gui--SubWindow {
 	color: rgba(50, 55, 60, 0.7);
 	qproperty-activeColor: rgba(38, 43, 48, 0.7);
 	qproperty-borderColor: rgba(0, 0, 0, 0);
-	border-style: solid;
+/*	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(255, 255, 255);
 	padding: 0px;
+*/
 	background-color: rgb(38, 43, 48);
 }
 
