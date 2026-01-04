@@ -104,8 +104,11 @@ QTextEdit, QLineEdit:focus, QComboBox:focus, QSpinBox:focus, QDoubleSpinBox:focu
 }
 
 QToolTip {
-	border-radius: 999px;
-	background: rgba(0, 0, 0, 0.7);
+/*	border-radius: 16px; */
+	border-color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	background: rgb(0, 0, 0);
 	color: #fff;
 	padding: 3px;
 }
@@ -797,25 +800,27 @@ lmms--gui--SideBar {
 	background-color: rgba(255, 255, 255, 0.04);
 }
 
-lmms--gui--SideBar QToolButton {
+lmms--gui--SideBar > QToolButton {
 	background-color: rgba(255, 255, 255, 0);
-	border: none;
+	border-width: 1px;
+	border-style: none;
 	font-size: 12px;
+	padding: 3px;
 }
 
-lmms--gui--SideBar QToolButton:hover {
+lmms--gui--SideBar > QToolButton:hover {
 	background: rgba(255, 255, 255, 0.15);
 	border: none;
 	font-size: 12px;
 }
 
-lmms--gui--SideBar QToolButton:pressed {
+lmms--gui--SideBar > QToolButton:pressed {
 	background: none;
 	border: none;
 	font-size: 12px;
 }
 
-lmms--gui--SideBar QToolButton:checked {
+lmms--gui--SideBar > QToolButton:checked {
 	background: rgba(255, 255, 255, 0);
 	border: solid;
 	border-width: 1px;
